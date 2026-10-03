@@ -1,0 +1,82 @@
+{
+  "0": [
+    "hospital",
+    "fitness",
+    "doctor",
+    "therapy",
+    "clinic",
+    "wellness",
+    "vaccine",
+    "symptom"
+  ],
+  "1": [
+    "goal",
+    "match",
+    "score",
+    "final",
+    "training",
+    "coach",
+    "team",
+    "player"
+  ],
+  "2": [
+    "campaign",
+    "debate",
+    "law",
+    "council",
+    "vote",
+    "reform",
+    "policy",
+    "ministry"
+  ],
+  "3": [
+    "code",
+    "launch",
+    "developer",
+    "cloud",
+    "battery",
+    "update",
+    "chip",
+    "network"
+  ],
+  "4": [
+    "trade",
+    "market",
+    "earnings",
+    "invest",
+    "rate",
+    "fund",
+    "inflation",
+    "bank"
+  ],
+  "5": [
+    "speedrun",
+    "level",
+    "controller",
+    "dungeon",
+    "server",
+    "stream",
+    "patch",
+    "esports"
+  ],
+  "6": [
+    "rumor",
+    "viral",
+    "exposed",
+    "leak",
+    "trending",
+    "recall",
+    "breaking",
+    "alert"
+  ],
+  "7": [
+    "people",
+    "today",
+    "this",
+    "very",
+    "the",
+    "excellent",
+    "reliable",
+    "strong"
+  ]
+}

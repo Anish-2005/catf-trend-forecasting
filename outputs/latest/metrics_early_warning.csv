@@ -1,0 +1,5 @@
+model,events,detected,recall,alerts,alert_precision,mean_lead,LT90
+community_arima,9,1,0.1111111111111111,2,1.0,2.0,2.0
+global_arima,9,0,0.0,0,,0.0,
+hybrid,9,4,0.4444444444444444,20,0.45,3.25,1.0
+naive,9,0,0.0,0,,0.0,

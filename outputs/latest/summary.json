@@ -1,0 +1,12 @@
+{
+  "n_interactions": 73812,
+  "n_epochs": 120,
+  "split_epoch": 78,
+  "horizon": 5,
+  "n_tracked_communities": 7,
+  "n_forecast_communities": 5,
+  "n_events": 9,
+  "runtime_seconds": 26.3,
+  "synthetic": true,
+  "community_nmi_mean": 0.984
+}

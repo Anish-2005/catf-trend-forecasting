@@ -1,0 +1,39 @@
+# CATF prototype configuration (PRD modules M1-M7)
+data:
+  source: synthetic          # synthetic | csv
+  csv_path: null             # required columns: timestamp,user,target,text
+  synthetic:
+    n_epochs: 120
+    n_communities: 6
+    users_per_community: 60
+    seed: 42
+
+epoch:
+  length_hours: 24           # one epoch = one graph snapshot step
+  window_epochs: 3           # snapshot graph = interactions of the last N epochs
+
+community:
+  min_size: 8
+  resolution: 1.0
+  match_jaccard: 0.30        # minimum overlap to continue a community across epochs
+  seed: 42
+
+features:
+  n_topics: 8
+  novelty_window: 7
+
+forecast:
+  horizon: 5                 # f : epochs ahead
+  test_fraction: 0.35        # chronological split (no shuffling)
+  min_coverage: 0.90         # community must exist in >= 90% of epochs to be forecast
+  arima_order: [1, 1, 1]
+  hybrid_lags: 3             # h : residual look-back
+  residual_model: mlp        # mlp | gbr
+  seed: 42
+
+warning:
+  critical_k: 2.0            # critical mass = train mean + k * train std of community activity
+  cooldown_epochs: 7
+  alert_model: hybrid
+
+output_dir: outputs/latest
